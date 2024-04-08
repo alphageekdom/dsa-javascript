@@ -1,4 +1,7 @@
 function reverseString(str) {
+  if (typeof str !== 'string') {
+    throw new Error('This is not a string');
+  }
   // Copy string and place in array
   const newArr = str.slice().split(' ');
 
