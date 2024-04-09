@@ -14,6 +14,9 @@
 // }
 
 function isPalindrome(str) {
+  if (typeof str !== 'string') {
+    throw new Error('Data type is not a string');
+  }
   const formattedStr = removeNonAlphanumeric(str.toLowerCase());
 
   const reversedStr = reverseString(formattedStr);
