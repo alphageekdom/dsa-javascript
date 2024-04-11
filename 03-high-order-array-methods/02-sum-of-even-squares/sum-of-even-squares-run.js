@@ -1,5 +1,7 @@
-const sumOfEvenSquares = require('./sum-of-even-squares');
+const sumOfEvenSquares = require('./sum-of-even-squares.js');
 
-const result = sumOfEvenSquares([1, 2, 3, 4, 5, 6]);
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const result = sumOfEvenSquares(numbers);
 
 console.log(result);
