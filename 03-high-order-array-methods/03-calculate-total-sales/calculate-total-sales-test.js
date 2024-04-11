@@ -10,7 +10,7 @@ test('Calculating total sales amount with tax', () => {
       ],
       8
     )
-  ).toBe(21.6);
+  ).toBeCloseTo(21.6);
 
   expect(
     calculateTotalSalesWithTax(
@@ -22,5 +22,5 @@ test('Calculating total sales amount with tax', () => {
       ],
       5
     )
-  ).toBe(42);
+  ).toBe(42.0);
 });
